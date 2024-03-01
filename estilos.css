@@ -1,0 +1,450 @@
+/* Estilos básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 238, 0, 0.507); /* Marrón */
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Paytone One", sans-serif;
+}
+
+header {
+  background-color: #333;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  height: 30px;
+  width: 100%;
+}
+.logo {
+  width: 100px;
+}
+
+.carrito {
+  width: 40px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul {
+  margin-top: 10px;
+  gap: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el carrito de compras */
+.cart {
+  margin-left: auto;
+}
+
+/* Estilos para el botón */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e53935; /* Rojo */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+#btnform {
+  display: flex;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #c62828; /* Rojo oscuro */
+}
+
+/* Estilos para el hero */
+.hero {
+  text-align: center;
+  color: rgb(46, 46, 46);
+  padding: 50px 0;
+  background-image: url("pizza.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Estilos para las más vendidas */
+.best-sellers {
+  padding: 50px 0;
+}
+
+.best-sellers h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content a {
+  display: flex;
+  justify-content: center;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las categorías */
+.categories {
+  padding: 50px 0;
+  background-color: #4caf50; /* Verde */
+  color: rgb(0, 0, 0);
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.grid-item a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #ffeb3b; /* Amarillo */
+  color: black;
+  font-weight: bold;
+}
+
+/* Estilos para las preguntas frecuentes */
+.faq {
+  padding: 50px 0;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: auto;
+}
+
+.accordion-item {
+  margin: 10px;
+}
+
+.accordion-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e53935; /* Rojo */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-button:hover {
+  background-color: #c62828; /* Rojo oscuro */
+}
+
+.accordion-button.active {
+  background-color: #4caf50; /* Verde */
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  border: 1px solid #e53935; /* Rojo */
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+/* Estilos para el contacto */
+.contact {
+  padding: 50px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e53935; /* Rojo */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.sitemap,
+.download,
+.social,
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sitemap ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.sitemap ul li {
+  margin-right: 20px;
+}
+
+.sitemap a {
+  color: white;
+  text-decoration: none;
+}
+
+.download a {
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.social ul li {
+  margin-right: 20px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+.copy p {
+  margin: 0;
+}
+
+.mapa-responsive {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+#ubicacion {
+  text-align: center;
+}
+
+
+
+
+
+
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.navlist a{
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+  }
+  .navlist a:hover{
+  border-bottom: 2px solid white;
+  }
+
+@media (max-width: 990px) {
+  #menu-icon {
+    display: block;
+  }
+}
+.navlist {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 300px;
+  height: 40vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  transition: all 0.55s ease;
+}
+.navlist a {
+  margin-left: 0;
+  display: block;
+}
+.parrafo3 {
+  font-size: 50%;
+}
+.navlist.open {
+  right: 0;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .accordion {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
