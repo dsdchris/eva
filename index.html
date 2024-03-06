@@ -27,8 +27,8 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="menu.pdf" target="_blank">Menú</a></li>
-                    <li><a href="#">Promociones</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#pedir">Más vendidas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
 
                 <div class="bx bx-menu" id="menu-icon"> </div>
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="contact">
+                <section class="contact" id="contacto">
                     <h2>Contacto</h2>
                     <p>Si tienes alguna duda, sugerencia, o comentario, puedes
                         escribirnos a través de este formulario y te
@@ -226,8 +226,8 @@
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#dmenu">Menú</a></li>
-                        <li><a href="#">Promociones</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#pedir">Más vendidas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="social">
@@ -248,14 +248,11 @@
         <script src="carrito.js"></script>
         <script src="pyr.js"></script>
         <script>
-// Función que se ejecuta cuando el formulario es enviado
-function mostrarMensaje() {
-  // Muestra un mensaje de confirmación
-  alert('Mensaje enviado con éxito');
-  // Para evitar que el formulario se envíe y recargue la página
-  return false;
-}
-</script>
+            function enviarFormulario() {
+             alert('Tu mensaje ha sido enviado con éxito.');
+              return true;
+            }
+        </script>
     </body>
 
 </html>
